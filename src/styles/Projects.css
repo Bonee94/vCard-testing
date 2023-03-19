@@ -1,0 +1,123 @@
+.work-tiles {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+.work-tiles a {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 400px;
+}
+
+.work-tiles img:hover {
+  transition: 0.3s filter linear;
+  filter: grayscale(0%) blur(0px);
+}
+
+.work-tiles h2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px 4px black;
+}
+
+.work-tiles img {
+  height: 200px;
+  width: 400px;
+  border: 0.3vw solid rgb(172, 172, 172);
+  filter: grayscale(70%) blur(1px);
+  transition: 0.3s filter linear;
+}
+
+.project-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    0deg,
+    rgb(72, 72, 72),
+    #71927e 50%,
+    rgb(72, 72, 72)
+  );
+  width: auto;
+  border-radius: 8px;
+  border: 4px solid #71927e;
+  padding: 3px 10px;
+  margin: 10px 5px 20px;
+}
+
+.project-titles a{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.tiles a {
+  color: #aec9fa;
+  transition: color 0.3s, font-size 0.5s, text-shadow .3s ease;;
+}
+
+.tiles a:hover {
+  color: #ffffff;
+  font-size: larger;
+}
+
+.project-titles .project-title-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255)
+}
+
+.project-titles .project-title-link:hover {
+  text-decoration: none;
+  color: rgb(236, 236, 236);
+  text-shadow: 14px 14px 14px black;
+}
+
+@media screen and (max-width: 500px) {
+  .big-work-tiles a img,
+  .work-tiles a img {
+    filter: grayscale(0) blur(0);
+  }
+
+  .tiles {
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+  }
+
+  .tiles a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #dadbdb;
+    width: 100%;
+  }
+
+  .tiles a img {
+    height: 200px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .tiles h2,
+  .tiles h3 {
+    font-size: 12px;
+    position: static;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .work-tiles {
+    width: 100%;
+  }
+}
